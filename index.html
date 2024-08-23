@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarządzanie finansami</title>
+
+    <!-- Dołączenie pliku stylów CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Główne kontenery aplikacji -->
+    <div class="container">
+        <h1>Zarządzanie finansami</h1>
+        <!-- Sekcja wyświetlania aktualnego salda -->
+        <div class="balance">Saldo: 0 PLN</div>
+
+        <!-- Formularz dodawania nowej transakcji -->
+        <form id="transaction-form">
+            <!-- Pole tekstowe do wprowadzenia opisu transakcji -->
+            <input type="text" id="description" placeholder="Opis transakcji" required>
+            <!-- Pole numeryczne do wprowadzenia kwoty transakcji -->
+            <input type="number" id="amount" placeholder="Kwota transakcji np. 100 PLN" required>
+            <!-- Przycisk dodania transakcji -->
+            <button type="submit">Dodaj transakcję</button>
+        </form>
+        <!-- Lista transakcji -->
+        <ul class="transaction-list" id="transaction-list"></ul>
+    </div>
+
+    <div class="container">
+        <h1>Zarządzanie subskrypcjami</h1>
+        
+        <!-- Formularz dodawania nowej subskrypcji -->
+        <form id="subscription-form">
+            <!-- Pole tekstowe do wprowadzenia nazwy subskrypcji -->
+            <input type="text" id="subDescription" placeholder="Nazwa subskrypcji" required>
+            <!-- Pole numeryczne do wprowadzenia kwoty subskrypcji -->
+            <input type="number" id="subAmount" placeholder="Kwota subskrypcji np. 25 PLN" required>
+            <!-- Pole wyboru daty rozpoczęcia subskrypcji -->
+            <input type="date" id="subDate" placeholder="Data subskrypcji" required>
+            <!-- Przycisk dodania subskrypcji -->
+            <button type="submit">Dodaj subskrypcję</button>
+        </form>
+        <!-- Lista subskrypcji -->
+        <ul class="subscription-list" id="subscription-list"></ul>
+    </div>
+
+    <!-- Dołączenie pliku JavaScript z logiką aplikacji -->
+    <script src="app.js"></script>
+</body>
+</html>

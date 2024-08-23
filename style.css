@@ -1,0 +1,106 @@
+/* Ustawienia dla całego ciała dokumentu */
+body {
+    background-color: #f8f9fa; /* Kolor tła strony */
+    font-family: Arial, Helvetica, sans-serif; /* Czcionka używana na całej stronie */
+    margin: 0; /* Usunięcie domyślnych marginesów */
+    padding: 20px; /* Dodanie odstępu wewnętrznego do całego ciała */
+}
+
+/* Styl dla głównego kontenera */
+.container {
+    max-width: 800px; /* Maksymalna szerokość kontenera */
+    margin: 0 auto; /* Wycentrowanie kontenera */
+    margin-bottom: 20px; /* Odstęp dolny między kontenerami */
+    background: #fff; /* Kolor tła kontenera */
+    padding: 20px; /* Wewnętrzny odstęp w kontenerze */
+    border-radius: 10px; /* Zaokrąglenie rogów kontenera */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Delikatny cień wokół kontenera */
+}
+
+/* Styl nagłówka */
+h1 {
+    text-align: center; /* Wyśrodkowanie tekstu nagłówka */
+    margin-bottom: 20px; /* Odstęp dolny nagłówka */
+}
+
+/* Styl salda */
+.balance {
+    text-align: center; /* Wyśrodkowanie tekstu salda */
+    font-size: 2rem; /* Większy rozmiar czcionki dla salda */
+    margin-bottom: 20px; /* Odstęp dolny dla sekcji salda */
+}
+
+/* Styl formularzy */
+form {
+    margin-bottom: 20px; /* Odstęp dolny formularza */
+    display: flex; /* Ustawienie flexboxa */
+    flex-direction: column; /* Ułożenie elementów formularza w kolumnie */
+    justify-content: center; /* Wycentrowanie elementów formularza w pionie */
+    align-items: center; /* Wycentrowanie elementów formularza w poziomie */
+}
+
+/* Styl dla pól tekstowych, liczbowych oraz dat */
+input[type="text"], input[type="number"], input[type="date"] {
+    width: calc(80% - 10px); /* Szerokość pól w formularzu */
+    padding: 10px; /* Wewnętrzny odstęp w polach */
+    margin: 10px 0; /* Odstęp górny i dolny pól */
+    border: 1px solid #ccc; /* Obramowanie pól */
+    border-radius: 5px; /* Zaokrąglenie rogów pól */
+}
+
+/* Styl dla przycisków */
+button {
+    padding: 10px 15px; /* Odstęp wewnętrzny przycisku */
+    background-color: #007bff; /* Kolor tła przycisku */
+    color: #fff; /* Kolor tekstu na przycisku */
+    border: none; /* Usunięcie obramowania */
+    border-radius: 4px; /* Zaokrąglenie rogów przycisku */
+    cursor: pointer; /* Ustawienie kursora wskazującego na klikalność */
+    font-size: 16px; /* Rozmiar czcionki tekstu na przycisku */
+    margin-top: 10px; /* Odstęp górny przycisku */
+}
+
+/* Zmiana koloru tła przycisku podczas najechania */
+button:hover {
+    background-color: #0056b3; /* Ciemniejszy kolor podczas najechania */
+}
+
+/* Styl dla listy transakcji */
+.transaction-list {
+    list-style-type: none; /* Usunięcie domyślnych stylów listy */
+    padding: 0; /* Usunięcie odstępu wewnętrznego listy */
+}
+
+/* Styl dla elementów na liście transakcji */
+.transaction-item {
+    padding: 10px; /* Odstęp wewnętrzny elementu listy */
+    border-bottom: 1px solid #ddd; /* Dolna linia pod każdym elementem */
+    display: flex; /* Ustawienie flexboxa */
+    justify-content: space-between; /* Rozłożenie elementów listy na całą szerokość */
+}
+
+/* Styl dla pozytywnej transakcji (dochód) */
+.transaction-item.income {
+    color: #28a745; /* Kolor zielony dla dochodów */
+}
+
+/* Styl dla negatywnej transakcji (wydatek) */
+.transaction-item.expense {
+    color: #dc3545; /* Kolor czerwony dla wydatków */
+}
+
+/* Styl dla listy subskrypcji */
+.subscription-list {
+    list-style-type: none; /* Usunięcie domyślnych stylów listy */
+    padding: 0; /* Usunięcie odstępu wewnętrznego listy */
+    align-items: center; /* Wycentrowanie elementów listy */
+}
+
+/* Styl dla elementów na liście subskrypcji */
+.subscription-item {
+    padding: 10px; /* Odstęp wewnętrzny elementu listy */
+    border-bottom: 1px solid #ddd; /* Dolna linia pod każdym elementem */
+    display: flex; /* Ustawienie flexboxa */
+    justify-content: space-between; /* Rozłożenie elementów listy na całą szerokość */
+    align-items: center; /* Wycentrowanie elementów w pionie */
+}
